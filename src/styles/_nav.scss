@@ -9,7 +9,7 @@
 
     list-style: none;
 
-    @include on-tablet {
+    @include on-laptop {
       display: flex;
       flex-direction: row;
       gap: 48px;
@@ -38,7 +38,7 @@
     text-decoration: none;
     letter-spacing: 2px;
 
-    @include on-tablet {
+    @include on-laptop {
       color: $white;
       text-decoration: none;
     }

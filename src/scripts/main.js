@@ -7,6 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.querySelector('.js-prev');
   const nextBtn = document.querySelector('.js-next');
 
+  const menu = document.querySelector('.page__menu');
+
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#burger-menu') {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+  });
+
   const slides = [
     {
       image: './src/images/slider/header-photo.jpg',
@@ -27,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       image: './src/images/slider/header-photo-4.jpg',
       title: 'Design',
       text: 'Creative solutions that work in real life.',
-    }
+    },
   ];
 
   let currentIndex = 0;

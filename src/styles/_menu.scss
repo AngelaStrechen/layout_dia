@@ -1,10 +1,10 @@
 .menu {
-  @include on-tablet {
+  @include on-laptop {
     text-align: center;
   }
 
   &__nav {
-    @include on-tablet {
+    @include on-laptop {
       display: block;
     }
   }

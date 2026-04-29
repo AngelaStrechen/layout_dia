@@ -1,5 +1,5 @@
 .header-menu {
-  @include on-tablet {
+  @include on-laptop {
     text-align: center;
   }
 
@@ -7,7 +7,7 @@
     display: none;
     margin-bottom: 40px;
 
-    @include on-tablet {
+    @include on-laptop {
       display: block;
       margin-bottom: 0;
     }
@@ -40,5 +40,11 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     list-style: none;
+
+    @include on-laptop {
+      gap: 30px;
+      font-size: 12px;
+      line-height: 120%;
+    }
   }
 }

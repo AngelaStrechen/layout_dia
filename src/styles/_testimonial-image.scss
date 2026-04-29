@@ -9,12 +9,12 @@
 
   background-color: $blue;
 
-  @include on-tablet {
+  @include on-laptop {
     width: 139px;
     height: 56px;
   }
 
-  @include on-tablet {
+  @include on-laptop {
     width: 109px;
     height: 44px;
   }
@@ -29,12 +29,12 @@
   top: 37px;
   left: 7px;
 
-  @include on-tablet {
+  @include on-laptop {
     top: 47px;
     left: 8px;
   }
 
-  @include on-tablet {
+  @include on-laptop {
     top: 36px;
   }
 
@@ -47,12 +47,12 @@
   top: 109px;
   right: 4px;
 
-  @include on-tablet {
+  @include on-laptop {
     top: 141px;
     right: 6px;
   }
 
-  @include on-tablet {
+  @include on-laptop {
     top: 108px;
   }
 

@@ -516,6 +516,7 @@
           </h2>
           <form
             class="contacts__form-wrapper"
+            autocomplete="off"
             onsubmit="
               this.reset();
               return false;
@@ -527,6 +528,7 @@
                 type="email"
                 name="email"
                 placeholder="Your Email"
+                autocomplete="off"
                 required
               />
             </label>
@@ -537,6 +539,7 @@
                 type="text"
                 name="name"
                 placeholder="Your name"
+                autocomplete="off"
                 required
               />
             </label>
@@ -546,6 +549,7 @@
                 class="contacts__input contacts__input--message"
                 name="message"
                 placeholder="Your message"
+                autocomplete="off"
                 rows="3"
                 required
               ></textarea>

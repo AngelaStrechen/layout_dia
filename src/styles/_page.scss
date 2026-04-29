@@ -1,8 +1,13 @@
+body.menu-open {
+  overflow: hidden;
+}
+
 .page {
   scroll-behavior: smooth;
   overflow-x: hidden;
 
   &__body {
+    box-sizing: border-box;
     margin: 0;
     background: $c-gray;
   }
@@ -32,11 +37,11 @@
 .container {
   padding-inline: 20px;
 
-  @include on-tablet {
+  @include on-laptop {
     padding-inline: 41px;
   }
 
-  @include on-tablet {
+  @include on-laptop {
     padding-inline: 54px;
   }
 
@@ -82,7 +87,7 @@
   &--menu {
     background-image: url(../images/icons/menu.svg);
 
-    @include on-tablet {
+    @include on-laptop {
       display: none;
     }
   }
@@ -152,11 +157,7 @@
     box-shadow: 0 0 0 3px rgba(32, 96, 246, 0.4);
   }
 
-  @include on-tablet {
-    grid-column: 1 / 4;
-  }
-
-  @include on-tablet {
+  @include on-laptop {
     grid-column: 1 / 5;
   }
 
@@ -173,19 +174,15 @@
     display: grid;
   }
 
-  @include on-tablet {
+  @include on-laptop {
     margin-top: -20px;
-  }
-
-  @include on-large-desktop {
-    // margin-top: -20px;
   }
 }
 
 .services {
   padding: 126px 0;
 
-  @include on-tablet {
+  @include on-laptop {
     padding-top: 155px;
     padding-bottom: 154px;
   }

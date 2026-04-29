@@ -1,10 +1,10 @@
 .contacts-menu {
-  @include on-tablet {
+  @include on-laptop {
     text-align: center;
   }
 
   &__nav {
-    @include on-tablet {
+    @include on-laptop {
       display: block;
     }
   }
@@ -37,12 +37,12 @@
     letter-spacing: 3px;
     list-style: none;
 
-    @include on-tablet {
+    @include on-laptop {
       flex-direction: row;
       justify-content: space-between;
     }
 
-    @include on-tablet {
+    @include on-desktop {
       gap: 64px;
     }
   }

@@ -1,5 +1,6 @@
 .about-us {
-  display: block;
+  @include page-grid;
+
   margin-top: 34px;
   margin-bottom: 30px;
   padding: 120px 20px;
@@ -9,19 +10,22 @@
     padding: 148px 41px;
   }
 
-  @include on-desktop {
+  @include on-laptop {
     margin-top: 0;
     padding-right: 154px;
-    padding-left: 154px;
+    padding-left: 100px;
   }
 
   @include on-large-desktop {
+    display: block;
     max-width: 754px;
     margin: 0 auto;
     padding-bottom: 178px;
   }
 
   &__title {
+    grid-column: 1 / -1;
+
     margin-bottom: 24px;
 
     font-family: Poppins, sans-serif;
@@ -32,11 +36,22 @@
     text-align: center;
 
     @include on-laptop {
+      grid-column: 1 / -1;
       margin-bottom: 16px;
+    }
+
+    @include on-laptop {
+      grid-column: 2 / 12;
+    }
+
+    @include on-large-desktop {
+      grid-column: 3 / 11;
     }
   }
 
   &__text {
+    grid-column: 1 / -1;
+
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 600;
@@ -46,6 +61,14 @@
 
     @include on-laptop {
       font-size: 24px;
+    }
+
+    @include on-laptop {
+      grid-column: 2 / 12;
+    }
+
+    @include on-large-desktop {
+      grid-column: 3 / 11;
     }
   }
 }
