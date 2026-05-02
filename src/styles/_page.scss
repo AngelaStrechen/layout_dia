@@ -1,10 +1,14 @@
-body.menu-open {
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 .page {
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
 
   &__body {
     box-sizing: border-box;
